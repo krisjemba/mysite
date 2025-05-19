@@ -1,0 +1,13 @@
+{% load static %}
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="{% url 'home' %}" class="nav-link">HOME</a>
+        <a href="{% url 'collaborate' %}" class="nav-link">
+            <span>Collaborate</span>
+            <span class="infinity-symbol">∞</span>
+        </a>
+        <a href="{% url 'communities' %}" class="nav-link">Communities</a>
+        <a href="{% url 'connect' %}" class="nav-link">Connect</a>
+        <a href="{% url 'blog' %}" class="nav-link">Blog</a>
+    </div>
+</nav>

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MySite{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'index/css/nav.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% include 'index/nav.html' %}
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{% static 'index/js/nav.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
